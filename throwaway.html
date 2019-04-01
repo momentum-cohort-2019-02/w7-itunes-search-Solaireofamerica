@@ -1,0 +1,8 @@
+const promise = fetch('https://itunes-api-proxy.glitch.me/search?term=${searchInput}')
+        .then(function (data) {
+            console.log(data)
+            console.log(data.json())
+            return data.json()
+        })
+        .then(function (json) {
+            console.log(json)
